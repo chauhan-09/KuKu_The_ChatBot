@@ -26,7 +26,7 @@ const server = http.createServer((req,res) =>{
         res.write('sorry request cant be fullfilled');
     }
 
-    res.end();   //this is mandotory in http to close the connection other user will wait for endtime
+    res.end();   //this is mandotory in http to close the connection otherwise user will wait for endtime
 });
 
 
